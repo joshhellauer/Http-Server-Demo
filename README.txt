@@ -1,5 +1,16 @@
 /****************************************************
 *****************************************************/
+What is this repo?
+It includes 4 versions of an HTTP server:
+server_proc.c: a process-driven concurrent HTTP server. 
+server_thread.c: a threaded concurrent HTTP server
+server_cached.c: a threaded concurrent HTTP server that uses a 
+                 linked-list with reference counting to cache
+                 responses
+server_cached_naive.c: another threaded, concurrent HTTP server
+                       it is "naive" because the mutual exclusion
+                       practiced on the cache data structure is sub-optimal.
+
 
 Compilation instructions:
 
